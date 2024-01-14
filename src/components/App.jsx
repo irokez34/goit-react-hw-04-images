@@ -37,12 +37,12 @@ export const App = () => {
     };
     getPhotos(searchQuery, pages);
   }, [pages, searchQuery]);
-  const onHandleSubmit = value => {
-    setSearchQuery(value);
+  const onHandleSubmit = query => {
+    setSearchQuery(query);
     setGallery([]);
-
     setPages(1);
   };
+
   const onHandleLoadMore = () => {
     setPages(pages + 1);
   };
