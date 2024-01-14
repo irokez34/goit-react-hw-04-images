@@ -10,6 +10,7 @@ export const ImageGallery = ({ images, onClick }) => {
           alt={tags}
           modal={largeImageURL}
           onClick={onClick}
+          onKeyDown={e => e.key === 'Enter' && onClick(e)}
         />
       )
     );

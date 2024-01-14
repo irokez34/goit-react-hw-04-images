@@ -1,6 +1,6 @@
-export const ImageGalleryItem = ({ src, alt, onClick, modal }) => {
+export const ImageGalleryItem = ({ src, alt, onClick, modal, key}) => {
   return (
-    <li className="ImageGalleryItem">
+    <li className="ImageGalleryItem" id = {key}> 
       <img
         className="ImageGalleryItem-image"
         src={src}
